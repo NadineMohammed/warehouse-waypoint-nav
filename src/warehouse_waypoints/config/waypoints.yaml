@@ -1,0 +1,37 @@
+# Named warehouse waypoint poses, in the map frame.
+#
+# IMPORTANT: these are placeholder values. After you finish SLAM mapping
+# and confirm AMCL localization, drive/teleport the robot to each real
+# location, echo /amcl_pose, and replace x, y, yaw_deg below with the
+# real numbers before running the mission.
+#
+# yaw_deg is in degrees for readability; the node converts it to a quaternion.
+
+waypoints:
+  home:
+    label: "Charging Station"
+    x: 0.0
+    y: 0.0
+    yaw_deg: 0.0
+
+  loading:
+    label: "Loading Station"
+    x: 2.0
+    y: -2.0
+    yaw_deg: 0.0
+
+  storage:
+    label: "Storage Area"
+    x: 6.0
+    y: -1.0
+    yaw_deg: 90.0
+
+  shipping:
+    label: "Shipping Station"
+    x: -1.0
+    y: 4.0
+    yaw_deg: -90.0
+
+mission_order: ["loading", "storage", "shipping", "home"]
+wait_at:
+  loading: 30.0

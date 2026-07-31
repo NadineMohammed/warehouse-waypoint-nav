@@ -9,10 +9,11 @@ from std_msgs.msg import String
 
 # Must match the names used in waypoint_mission.py
 WAYPOINTS = [
-    {'name': 'Home',             'x': 0.000,  'y': 0.000,  'yaw': 0.000, 'wait': 0},
-    {'name': 'Loading Station',  'x': 7.663,  'y': -5.210, 'yaw': -0.260, 'wait': 30},
-    {'name': 'Storage Area',     'x': 14.302, 'y': -5.372, 'yaw': 0.127, 'wait': 0},
-    {'name': 'Shipping Station', 'x': 20.626, 'y': 1.807,  'yaw': 1.392, 'wait': 0},
+    {'name': 'Home',             'x': 0.000,  'y': 0.000,  'yaw': 0.000,  'wait': 1},
+    {'name': 'Loading Station',  'x': 12.274, 'y': -0.140, 'yaw': -0.142, 'wait': 30},
+    {'name': 'Storage Area',     'x': 13.133, 'y': 4.731,  'yaw': 0.975,  'wait': 1},
+    {'name': 'Shipping Station', 'x': 5.650,  'y': 3.961,  'yaw': -2.962, 'wait': 1},
+    {'name': 'Home',             'x': 0.000,  'y': 0.000,  'yaw': 0.000,  'wait': 1}
 ]
 
 BLUE = (0.0, 0.4, 1.0)

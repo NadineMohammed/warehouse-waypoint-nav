@@ -1,6 +1,7 @@
-image: /root/workspaces/turtlebot_ws/src/robot_navigation/maps/warehouse_map.pgm
-resolution: 0.01
-origin: [-8.8934, -7.5802, 0.0]
+image: warehouse_map.pgm
+mode: trinary
+resolution: 0.050
+origin: [-8.107, -6.746, 0]
 negate: 0
 occupied_thresh: 0.65
-free_thresh: 0.25
+free_thresh: 0.196
